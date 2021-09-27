@@ -1,0 +1,282 @@
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    font-family: "Nunito Sans", sans-serif;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+header {
+    margin: 6vw auto 6vw auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#title {
+    text-transform: uppercase;
+    letter-spacing: 0.62vw;
+    font-weight: 900;
+    font-size: 9.9vw;
+}
+
+#subtitle {
+    font-size: 4.25vw;
+    font-weight: 600;
+    text-transform: none;
+    font-weight: 700;
+    letter-spacing: 0.05vw;
+}
+
+#red-line {
+    width: 58vw;
+    height: 0.8vw;
+    background: #DD1918;
+    position: absolute;
+    right: 7.6vw;
+    margin-top: -5.5vw;
+}
+
+#yellow-circle {
+    height: 11vw;
+    width: 11vw;
+    position: absolute;
+    background: #FAD700;
+    border-radius: 50%;
+    right: 5.8vw;
+    margin-top: -13.7vw;
+    z-index: -10;
+}
+
+@media (max-width: 900px) {
+    #title {
+        font-size: 16.62vw;
+    }
+    #subtitle {
+        font-size: 8.5vw;
+        padding-bottom: 1.6vw;
+    }
+    #red-line {
+        left: 7.6vw;
+        width: 58vw;
+    }
+    #yellow-circle {
+        display: none;
+    }
+}
+
+#image {
+    display: block;
+    margin: -0.8vw auto 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    position: relative;
+    float: right;
+    color: white;
+    margin-top: -2em;
+    padding-right: 1em;
+    font-size: 3vw;
+    text-align: right;
+    max-width: 81vw;
+}
+
+#tribute-info {
+    color: #353535;
+}
+
+#quote {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    color: #1E4797;
+    text-align: center;
+}
+
+q {
+    font-style: italic;
+    quotes: none;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+#quoteSource {
+    font-style: normal;
+    font-size: 3vw;
+    margin-top: 1.3vw;
+}
+
+#intro {
+    font-size: 3vw;
+    line-height: 3vw;
+    margin-bottom: 2vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+    #intro {
+        font-size: 2.5em;
+        line-height: 1.6em;
+    }
+    q {
+        font-size: 3em;
+    }
+    #quoteSource {
+        font-size: 2.5em;
+    }
+}
+
+#timeline-title {
+    font-size: 6vw;
+    color: #1E4797;
+    font-weight: 700;
+    margin-bottom: 5vw;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+#timeline {
+    position: relative;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+#timeline:after {
+    content: "";
+    background-color: #DD1918;
+    width: 0.8vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+}
+
+.container-timeline-right,
+.container-timeline-left {
+    width: 31vw;
+    position: relative;
+    left: 0;
+    background-color: #E5E5E5;
+    padding: 1.5vw;
+}
+
+.container-timeline-right {
+    left: 60%;
+}
+
+.container-timeline-left {
+    left: 0;
+}
+
+.container-timeline-right > p,
+.container-timeline-left > p {
+    font-size: 3vw;
+}
+
+
+.circle-year-left,
+.circle-year-right {
+    position: absolute;
+    background-color: #FAD700;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.circle-year-left > p ,
+.circle-year-right > p {
+    font-size: 3vw;
+}
+
+.circle-year-right {
+    right: 35.5vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle-year-left {
+    left: 35.5vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1100px) {
+    .container-timeline-right,
+    .container-timeline-left {
+        width: 75vw;
+        left: 12.2vw;
+        margin-bottom: 2vw;
+    }
+    #timeline::after {
+        left: 0;
+    }
+    .circle-year-left,
+    .circle-year-right {
+        left: -10vw;
+        width: 8.3vw;
+        height: 8.3vw;
+    }
+    #timeline-title {
+        text-align: left;
+        font-size: 8vw;
+    }
+    #intro,
+    #quote {
+        text-align: left;
+    }
+    .circle-year-left > p,
+    .circle-year-right > p {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container-timeline-right > p,
+    .container-timeline-left > p {
+        font-size: 5vw;
+        line-height: 1.6em;
+    }
+}
+
+#links {
+    font-size: 3vw;
+    font-weight: 700;
+    padding: 4vw;
+    margin: 1.1vw;
+    line-height: 3vw;
+    text-align: center;
+}
+
+#links > a {
+    font-size: 3vw;
+    font-weight: 700;
+    color: #DD1918;
+    text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+    #links {
+        position: relative;
+        text-align: left;
+        left: 6.8vw;
+        font-size: 5vw;
+        line-height: 4.5vw;
+    }
+    #links > a {
+        font-size: 5vw;
+    }
+}
